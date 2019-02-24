@@ -1,0 +1,16 @@
+{
+    "dev": {
+        "app_function": "app.app",
+        "aws_region": "eu-west-1",
+        "profile_name": "default",
+        "project_name": "backend",
+        "runtime": "python3.6",
+        "s3_bucket": "eu-semnez-j7co2btfz",
+        "cors": true,
+        "extra_permissions": [{
+            "Effect": "Allow",
+            "Action": "ssm:GetParameter",
+            "Resource": "arn:aws:ssm:*:*:parameter/*"
+        }]
+    }
+}
