@@ -6,7 +6,8 @@ export const routes = [
   {
     path: '/',
     component: Home,
-    name: 'home'
+    name: 'home',
+    meta: { requiresAuth: true }
   },
   {
     path: '/callback',

@@ -40,12 +40,12 @@ def getToken():
     if not 'access_token' in response:
         return jsonify(ok = 'false', status = 'authorization failed'), 401
     date = datetime.utcnow().timestamp()
-    reply = json.dumps({
+    reply = {
         'ok': 'true',
         'access_token': response['access_token'],
         'date': date,
         'expires_in': response['expires_in']
-    })
+    }
     return jsonify(reply), 200
 
 
