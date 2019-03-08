@@ -6,10 +6,10 @@ import json
 import requests
 
 app = Flask(__name__)
-CORS(app, origins=["https://eu-semnez.webapp.link", "https://auth.eu-semnez.webapp.link"] )
+CORS(app, origins=["https://cog.webapp.link", "https://auth.cog.webapp.link"] )
 
-REDIRECT_URI = 'https://eu-semnez.webapp.link/callback'
-TOKEN_URI = 'https://auth.eu-semnez.webapp.link/oauth2/token'
+REDIRECT_URI = 'https://cog.webapp.link/callback'
+TOKEN_URI = 'https://auth.cog.webapp.link/oauth2/token'
 
 @app.route('/', methods = ['GET'])
 def check():
@@ -22,7 +22,7 @@ def getToken():
         return jsonify(ok = 'false', status = 'code missing'), 404
     ssm = boto3.client('ssm', 'eu-west-1')
     clientid_key = ssm.get_parameter(
-        Name='cognito_eusemnez_client_id',WithDecryption=False
+        Name='cog_client_id',WithDecryption=False
     )
     client_id = clientid_key['Parameter']['Value']
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}

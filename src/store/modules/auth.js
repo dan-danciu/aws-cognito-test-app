@@ -51,7 +51,7 @@ const actions = {
   async authenticate ({ commit, state }, code) {
     state.loading = true
     await axios
-      .post("https://cbf9bhx78g.execute-api.eu-west-1.amazonaws.com/dev/gettoken" + '?code=' + code)
+      .post("https://n4anj0az01.execute-api.eu-west-1.amazonaws.com/dev/gettoken" + '?code=' + code)
       .then(response => {
         if(response.data["ok"] === "true") {
           commit('changeToken', response.data)

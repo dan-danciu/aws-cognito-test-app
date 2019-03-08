@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="">
     <img alt="Vue logo" src="../assets/logo.png">
-    ...de la victorie!
+    ...from Victory!
   </div>
 </template>
 

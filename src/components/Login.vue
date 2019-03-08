@@ -7,7 +7,7 @@
 <script>
 export default {
   mounted() {
-    location.replace('https://auth.eu-semnez.webapp.link/login?response_type=code&client_id=69l6lhdru9me7363rbpf4mns8f&redirect_uri=https://eu-semnez.webapp.link/callback')
+    location.replace('https://auth.cog.webapp.link/login?response_type=code&client_id=59cc168ev6f97u29avu345no0b&redirect_uri=https://cog.webapp.link/callback')
   }
 }
 </script>

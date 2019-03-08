@@ -3,9 +3,9 @@
         "app_function": "app.app",
         "aws_region": "eu-west-1",
         "profile_name": "default",
-        "project_name": "backend",
+        "project_name": "cog",
         "runtime": "python3.6",
-        "s3_bucket": "eu-semnez-j7co2btfz",
+        "s3_bucket": "cog-j7co2btfz",
         "cors": true,
         "extra_permissions": [{
             "Effect": "Allow",
